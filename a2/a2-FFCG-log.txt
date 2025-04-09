@@ -1,0 +1,79 @@
+Welcome to ItrDFS
+Initial State:
+Left bank: farmer, fox, chicken, grain
+Right bank: 
+
+len(OPEN)= 1; len(CLOSED)= 0; COUNT = 0
+OPEN is now: Left bank: fox, grain
+Right bank: farmer, chicken
+
+len(OPEN)= 1; len(CLOSED)= 1; COUNT = 1
+OPEN is now: Left bank: farmer, fox, grain
+Right bank: chicken
+
+len(OPEN)= 1; len(CLOSED)= 2; COUNT = 2
+OPEN is now: Left bank: grain
+Right bank: farmer, fox, chicken
+, Left bank: fox
+Right bank: farmer, chicken, grain
+
+len(OPEN)= 2; len(CLOSED)= 3; COUNT = 3
+OPEN is now: Left bank: farmer, chicken, grain
+Right bank: fox
+, Left bank: fox
+Right bank: farmer, chicken, grain
+
+len(OPEN)= 2; len(CLOSED)= 4; COUNT = 4
+OPEN is now: Left bank: chicken
+Right bank: farmer, fox, grain
+, Left bank: fox
+Right bank: farmer, chicken, grain
+
+len(OPEN)= 2; len(CLOSED)= 5; COUNT = 5
+OPEN is now: Left bank: farmer, chicken
+Right bank: fox, grain
+, Left bank: farmer, fox, chicken
+Right bank: grain
+, Left bank: fox
+Right bank: farmer, chicken, grain
+
+len(OPEN)= 3; len(CLOSED)= 6; COUNT = 6
+OPEN is now: Left bank: 
+Right bank: farmer, fox, chicken, grain
+, Left bank: farmer, fox, chicken
+Right bank: grain
+, Left bank: fox
+Right bank: farmer, chicken, grain
+
+len(OPEN)= 3; len(CLOSED)= 7; COUNT = 7
+Congratulations on successfully guiding farmer, fox, chicken, grain across the river!
+Solution path: 
+Left bank: farmer, fox, chicken, grain
+Right bank: 
+
+Left bank: fox, grain
+Right bank: farmer, chicken
+
+Left bank: farmer, fox, grain
+Right bank: chicken
+
+Left bank: grain
+Right bank: farmer, fox, chicken
+
+Left bank: farmer, chicken, grain
+Right bank: fox
+
+Left bank: chicken
+Right bank: farmer, fox, grain
+
+Left bank: farmer, chicken
+Right bank: fox, grain
+
+Left bank: 
+Right bank: farmer, fox, chicken, grain
+
+Length of solution path found: 7 edges
+Number of states expanded: 7
+Maximum length of the open list: 3
+
+Process finished with exit code 0
