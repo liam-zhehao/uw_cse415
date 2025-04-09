@@ -1,0 +1,152 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{makecell}
+
+\title{CSE 415 Assignment 2 Report: \\
+Evaluating Search Algorithms and Heuristics}
+\author{Your Names Here }
+\date{January 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+I am John Doe. (Or We are John Doe and Jane Smith -- replace with your names(s)). 
+This is our report for Assignment 2 covering both blind search algorithms
+and heuristic search.
+
+\section{Report on Part A: Problem Formulation and Blind Search Algorithms}
+
+\subsection{Part A Step 4 (c)}
+
+(your answer for the question in Part A step 4 goes here.)
+
+
+\subsection{Part A Step 8}
+
+(your answer for the question in Part A step 8 goes into the table below, as
+well as the path details in 2.3 and explanations in 2.4.)
+
+The paths are not required in the report for the entries marked "skip."
+
+{\flushleft
+\begin{tabular}{|l|p{2cm}|p{2cm}|p{3cm}|}
+\hline
+\parbox{3.5cm}{Problem and\\ Algorithm} & Path Found & Path length & \#Nodes Expanded \\
+\hline
+\makecell[l]{Humans, Robots\\ and Ferry / DFS} & (skip) & & \\
+\hline
+\makecell[l]{Humans, Robots\\ and Ferry / BreadthFS} & & & \\
+\hline
+\makecell[l]{Farmer, Fox, Chicken\\ and Grain/ DFS} & & & \\
+\hline
+\makecell[l]{Farmer, Fox, Chicken\\ and Grain/ BreadthFS} & & & \\
+\hline
+\makecell[l]{4-Disk Towers of\\ Hanoi/DFS} & (skip) & & \\
+\hline
+\makecell[l]{4-Disk Towers of\\ Hanoi/BreadthFS} & & & \\
+\hline
+\end{tabular}}
+
+\subsection{Part A Step 8, Path details}
+ Paths found (if not shown in the table).  Copy the state sequences
+ obtained from the search algorithm on the requested problems.
+
+ \begin{itemize}
+ \item HRF/BreadthFS:
+ \item FFCG/DFS: 
+ \item FFCG/BreadthFS:
+ \item 4-Disk TOH/BreadthFS:
+ \end{itemize}
+
+ \subsection{Part A Step 8,  Explanations of Certain Differences, Using Towers-of-Hanoi  }
+
+\begin{paragraph}
+(i. Why the maximum length of the OPEN list is more for one algorithm
+than the other)
+
+\end{paragraph}
+\begin{paragraph}
+(ii. Why why the solution PATH length is different for one algorithm from that of the other. )
+
+\end{paragraph}
+
+% -----------------------------
+\newpage
+\section{Report on Part B: Heuristics for the Eight Puzzle}
+
+(Your results for Part B should be reported in the table below.)
+
+
+\subsection{Results with Heuristics for the Eight Puzzle}
+
+{\flushleft
+\begin{tabular}{|c|l|c|l|c|c|c|}
+\hline
+Puzzle & Heuristic & Solved? & \# Soln Edges & Soln Cost & \# Expanded & Max Open\\
+\hline
+A & none (UCS) & Y & & & & \\
+\hline
+A & Hamming & Y & & & & \\
+\hline
+A & Manhattan & Y & & & & \\
+\hline
+B & none (UCS) & & & & & \\
+\hline
+B & Hamming &  & & & & \\
+\hline
+B & Manhattan & Y & & & & \\
+\hline
+C & none (UCS) & & & & & \\
+\hline
+C & Hamming &  & & & & \\
+\hline
+C & Manhattan & Y & & & & \\
+\hline
+D & none (UCS) & & & & & \\
+\hline
+D & Hamming &  & & & & \\
+\hline
+D & Manhattan & Y & & & & \\
+\hline
+
+\end{tabular} }
+
+\begin{verbatim}
+Puzzle A: [3,0,1,6,4,2,7,8,5]
+Puzzle B: [3,1,2,6,8,7,5,4,0]
+Puzzle C: [4,5,0,1,2,8,3,7,6]
+Puzzle D: [0,8,2,1,7,4,3,6,5]
+\end{verbatim}
+
+\subsection{(Optional) Evaluating Our Custom Heuristics}
+
+Describe your custom heuristic here.  What is the underlying intuition for it?
+Is it admissible? Why or why not, or why is it difficult to determine if that
+is the case.  How would you compare its computational cost with that of
+the Hamming heuristic and the Manhattan distance heuristic?
+
+What puzzles did you try it on, and how did it compare?
+You may add rows to your table above to support your answer about comparison.
+(Give your heuristic an appropriate short name to identify it in the table.)
+
+\newpage
+\section{Partnership Retrospective}
+
+\subsection{Partnership?}
+Did you work in a partnership? (yes or no).
+
+If so, who were the partners (repeating your names from below the title on the first page)?
+
+\subsection{Collaboration}
+Also if so, how did you did you divide the work of this assignment?
+
+\subsection{Newness of the Collaboration}
+If this was a new sort of experience for either of you, please mention that,
+and in what way(s) it felt new.
+
+
+
+
+\end{document}
