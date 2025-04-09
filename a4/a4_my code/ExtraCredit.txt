@@ -1,0 +1,21 @@
+We want to participate the competition
+Part I:
+We implemented a feature that uses static evaluation scores to order child nodes during the search process. This is done by sorting potential moves based on their evaluation scores before diving deeper into the search tree. When playing as "X" (the maximizing player), our agent sorts moves in descending order, while for "O" (the minimizing player), the moves are sorted in ascending order. This helps the agent explore the most promising moves first, making the search process more efficient overall. 
+
+We also added Zobrist hashing to handle repeated game states more efficiently. Every board state gets a unique hash value using a table of random numbers. We store the hash values in a transposition table, so if the same state comes up again, we can quickly look it up instead of recalculating everything from scratch. We also set up counters to track how many times the hash table is written to, how many times it is checked, and how often a hit occurs when a state is found in the table. This not only helps speed up the game but also reduces unnecessary computations.
+
+Part II:
+We set the agent's persona to be evil. It is designed to be an evil AI boss called AlphaGo, 
+a tribute to the famous AI agent in Go. We have called a Google Gemini API in the prepare 
+function. It will import the Gemini and initialize it when the utterance is true. The Gemini, 
+therefore, can generate sentences against the opponent. There is an if condition in the 
+make_move function that will allow Gemini to create a sentence against the opponent as an 
+evil AI agent if the utterance_state is true for the agent. The sentence generation is also 
+based on the opponent's remark.
+
+The agent will also react to the opponent's remark. The agent will show the last move and its 
+evaluation when the opponent says that "Tell me how you did that". When the opponent says that
+"What's your take on the game so far?", the agent will generate a short story based on the 
+historical states and remarks. It's required to generate as an evil AI.
+
+Therefore, our agent can taunt and react to the opponent's remark as an evil AI. 

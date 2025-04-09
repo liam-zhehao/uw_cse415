@@ -1,0 +1,14 @@
+Name: Zhehao Li
+Student ID: 2326829
+Email: zhehao@uw.edu
+
+1. In the context of the Towers-of-Hanoi World MDP, explain how the Value Iteration algorithm uses the Bellman equations to iteratively compute the value table.
+Value Iteration updates each state's value based on the Bellman equation:
+V(s) = max_a Σ_s' P(s' | s, a) [R(s, a, s') + γV(s')].
+For each state, it evaluates all possible actions and their expected rewards, iterating until convergence. This ensures that the computed values gradually approximate the optimal state values.
+
+2. How did you decide your custom epsilon function? What thoughts went into that and what would you change to further optimize your exploration? If your function was strong, explain why.
+I designed my custom epsilon function as ε = max(0.1, 1 / (1 + 0.01 * n_step)) to ensure high exploration at the beginning and gradual exploitation over time. This prevents excessive exploration in later stages while maintaining some randomness. To further optimize, I could introduce an adaptive decay factor based on learning progress rather than a fixed formula.
+
+3. What is another exploration strategy other than epsilon-greedy that you believe would fit well with the Towers of Hanoi formulation? Why?
+An alternative strategy is Upper Confidence Bound (UCB), which balances exploration and exploitation using confidence intervals. This is useful in the Towers of Hanoi MDP as it prioritizes actions with high uncertainty early on while gradually focusing on the most promising ones, improving convergence efficiency.
